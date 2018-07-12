@@ -1,0 +1,25 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.add-word{
+    display: inline-block;
+    border-right:5px solid black;
+    width: 45%;
+    padding: 5%;
+}
+
+.output{
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+}
+button{
+    box-shadow: 2px 2px black;
+    margin-top: 5%;
+    color: black !important;
+}
+.output button{
+    background-color: red;
+}
