@@ -10,7 +10,6 @@ def process(request, methods=['POST']):
     print("WORD: ",request.session['word'])
     print("COLOR: ",request.session['color'])
     print("BIG: ",request.session['size'])
-
     return redirect('/')
 
 def clear(request):
