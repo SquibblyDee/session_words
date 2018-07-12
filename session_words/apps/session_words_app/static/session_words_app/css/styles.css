@@ -20,6 +20,16 @@ button{
     margin-top: 5%;
     color: black !important;
 }
+
 .output button{
     background-color: red;
+    margin-bottom: 5%;
+}
+
+.big{
+    font-size: 25pt;
+}
+
+.small{
+    font-size: 12pt;
 }

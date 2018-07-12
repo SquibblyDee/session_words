@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-
+# Just a single path for our single app
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('apps.session_words_app.urls'))
