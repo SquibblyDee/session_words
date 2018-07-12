@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 # Create your views here.
 def index(request):
+    if 'words' not in request.session:
+        request.session['words']={}
     return render(request,'session_words_app/index.html')
 
 def process(request, methods=['POST']):
@@ -10,6 +12,9 @@ def process(request, methods=['POST']):
     print("WORD: ",request.session['word'])
     print("COLOR: ",request.session['color'])
     print("BIG: ",request.session['size'])
+    temp_list = [request.session['words']]
+    temp_list.append({"word": request.session['word'], "color": request.session['color'], "show_big": request.session['size']})
+    request.session['words'] = temp_list
     return redirect('/')
 
 def clear(request):
